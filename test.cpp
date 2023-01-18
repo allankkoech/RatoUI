@@ -1,9 +1,13 @@
 #include <iostream>
 
-using namespace std;
+#include "gui/mainloop.h"
 
-int main()
+int main(int argc, char *argv[])
 {
-    cout << "Hello World!" << endl;
+    MainLoop mainApp;
+    mainApp.run();
+
+    mainApp.delaySeconds(10);
+
     return 0;
 }
